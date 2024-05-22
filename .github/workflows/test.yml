@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Flemmli97/Warp
+        uses: Dockerfile.wasm-build
