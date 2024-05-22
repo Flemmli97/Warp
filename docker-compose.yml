@@ -1,0 +1,8 @@
+services:
+  rust:
+    build: 
+        context: .
+        dockerfile: Dockerfile.wasm-build
+    container_name: Rust
+    volumes:
+      - ./:/data
