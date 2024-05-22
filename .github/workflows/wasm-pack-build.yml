@@ -1,4 +1,11 @@
+name: Wasm-Pack build
 on: ["push"]
+  # push:
+  #   paths:
+  #     - 'extensions/warp-ipfs/**'
+  # pull_request:
+  #   paths: 
+  #     - 'extensions/warp-ipfs/**'
 
 jobs:
   push_wasm_pack:
@@ -9,3 +16,5 @@ jobs:
       - name: Push wasm-pack to remote
         id: wasm-pack
         uses: ./.github/actions/wasm-pack
+      - name: Push Remote
+        run: ls .
