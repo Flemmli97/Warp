@@ -1,0 +1,11 @@
+on: ["push"]
+
+jobs:
+  push_wasm_pack:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - uses: actions/checkout@v4
+      - name: Push wasm-pack to remote
+        id: wasm-pack
+        uses: ./actions/wasm-pack

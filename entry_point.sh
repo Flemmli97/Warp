@@ -6,10 +6,8 @@ cargo install wasm-pack
 cd $GITHUB_WORKSPACE/extensions/warp-ipfs
 echo "Building wasm-pack"
 wasm-pack build --target web --out-dir www
-ls .
-# cd www
+cd www
 
-# sleep infinity
 # # Based on https://github.com/cpina/github-action-push-to-another-repository
 # set -e  # if a command fails it stops the execution
 # set -u  # script fails if trying to access to an undefined variable
