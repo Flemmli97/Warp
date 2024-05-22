@@ -17,4 +17,7 @@ jobs:
         id: wasm-pack
         uses: ./.github/actions/wasm-pack
       - name: Push Remote
-        run: ls .
+        run: |
+          ls .
+          cd extensions/warp-ipfs
+          ls .
